@@ -18,7 +18,30 @@ while(N<100)
 //Преобразование числа в строку
 string str = N.ToString();
 //Преобразование строки в массив
-char [] arryi = str.ToCharArray();
+char [] array = str.ToCharArray();
+// Нахождение индекса максимального и минимального значения массива
+int min =0, max = 0, i = 0,  imin = 0, imax = 0, size=array.Length;
+
+while (i<size)
+{
+    if (array[i]<min)
+    {
+       min=array[i];
+        imin=i;
+    }
+    i++;
+}
+i=0;
+while (i<size)
+{
+    if (array[i]>max)
+    {
+        max=array[i];
+        imax=i;
+    }
+    i++;
+}
+//Console.Write(imax+"  "+imin);
 
 // int number;
 // bool isNumber = int.TryParse(N, out number);
