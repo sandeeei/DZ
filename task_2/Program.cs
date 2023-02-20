@@ -14,7 +14,7 @@ while(N<100)
     Console.WriteLine("Введено число менее 2-х разрядов. Введите число более 2-х разрядов : ");
     N = Convert.ToInt32(Console.ReadLine());
 }
-
+string str = N.ToString();
 // int number;
 // bool isNumber = int.TryParse(N, out number);
 
