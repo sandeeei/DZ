@@ -9,12 +9,17 @@
 Console.Write("Введите число более 2-х разрядов : ");
 
 int N = Convert.ToInt32(Console.ReadLine());
+// проверка на разрядность числа
 while(N<100)
 {
     Console.WriteLine("Введено число менее 2-х разрядов. Введите число более 2-х разрядов : ");
     N = Convert.ToInt32(Console.ReadLine());
 }
+//Преобразование числа в строку
 string str = N.ToString();
+//Преобразование строки в массив
+char [] arryi = str.ToCharArray();
+
 // int number;
 // bool isNumber = int.TryParse(N, out number);
 
